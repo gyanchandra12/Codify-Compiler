@@ -1,4 +1,4 @@
-# codify-online-compiler
+# codify-compiler
 codify is a online IDE buid using React, express and nodejs for Java, python, c++ and javascript.
 it is also provide an interface to give some input to the program.
 I have used jDoodle apis for compiling the code.
