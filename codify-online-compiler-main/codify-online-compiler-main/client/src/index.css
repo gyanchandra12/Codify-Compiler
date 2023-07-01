@@ -1,0 +1,182 @@
+:root {
+  --dark: #1b2430;
+  --primary: #7c83fd;
+  --vs-dark: #1e1e1e;
+  --light-green: #d8f3dc;
+  --nav-green: #40916c;
+  --white-fade: #f8f9fa;
+}
+
+* {
+  margin: 0;  
+  font-size: 15px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-green);
+  
+}
+/* .monaco-editor {
+  font-size: 30px;                                          
+} */
+nav {
+  height: 50px;
+  color: #d8f3dc;
+  padding: 10px;
+  background-color: var(--nav-green);
+  transition: 0.2s;
+  box-shadow: 0px 1px 10px gray;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+.logo {
+  font-size: 2rem;
+  font-family: 'BastamanBold', sans-serif !important;              
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.langOption {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+select {
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid d8f3dc;
+  border-radius: 0.4em;
+  padding: 0.25em 0.5em;
+  font-size: 1.2rem;
+  background-color: #d8f3dc;
+  cursor: pointer;
+  line-height: 1;
+}
+.btn {
+  width: 80px;
+  height: 30px;
+}
+.editorWrap {
+  padding: 1px 0;
+  background-color: #1e1e1e;
+  width: 65%;
+}
+.editorOuter {
+  height: calc(100vh - 83px);
+  display: flex;
+  flex-direction: row;
+}
+
+.seperator {
+  height: 13px;
+  background-color: var(--vs-dark);
+}
+
+.container {
+  width: 35%;
+}
+.textareaContainer {
+  padding-left: 10px;
+}
+textarea {
+  color: #f0f6fc;
+  width: calc(100% - 20px);
+  height: 35vh;
+  font-size: 15px;
+  padding: 8px;
+  background-color: var(--vs-dark);
+}
+.textareaContainer >h3 {
+  font-size: 1.2rem;
+}
+
+.btnrun {
+  background-color : var(--light-green);
+  height: 50px;
+  border-radius: 10px;
+  transition: ease-in-out 2ms;
+  border: 0.5px solid var(--nav-green);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: var(--dark);
+  border: solid transparent;
+  border-radius: 14px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: var(--dark);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  opacity: 90%;
+}
+
+.button-19:disabled {
+  opacity: 50%;
+}
+
+.runimg {
+  margin: -10px;
+  margin-right: 0px;
+  width: 2rem;
+}
